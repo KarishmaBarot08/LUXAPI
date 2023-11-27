@@ -6,7 +6,7 @@
         <!--<listener class-name="api.utilities.ExtentReport"></listener>-->
         <!--<listener class-name="api.utilities.RetryAnalyzer"></listener>-->
     </listeners>
-    <test name="Regression">
+    <!--<test name="Regression on QA env">
 
         <classes>
             <class name="test.TokenGenerator"></class>
@@ -21,6 +21,11 @@
             <class name="test.ScheduleTestCases"></class>
             <class name="test.ParticipantTestCases"></class>
             <class name="test.EventTestCases"></class>
+        </classes>
+    </test>-->
+    <test name="List APIs on PROD env">
+        <classes>
+            <class name="test.ProdListAPIs"></class>
         </classes>
     </test>
 </suite>

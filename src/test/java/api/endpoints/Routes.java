@@ -1,6 +1,7 @@
 package api.endpoints;
 
 public class Routes {
+    //QA environment
     public static String base_url="https://api.lux-eu.qa.westfield.com/v1";
     public static String api_key = "6LHei3PZNc4aaAJ4jJJR69TqMGob9cuN1TKZiKiA";
     public static String apiKeySecure ="demoapikey1234567890";
@@ -8,6 +9,11 @@ public class Routes {
     public static String password = "PaniPuri$8";
     public static String client_id = "1f545fd55f450c03ba2ffaa692140866a3aa38db26f38b47ce80c1bbf5c512aa";
     public static String client_secret = "6511de6c9f458ae5a80cc15d3a176efd390a934d5487d323b11c0ffa98c3de0d";
+
+    //Prod environment
+    public static String base_url_prod="https://api.lux-eu.westfield.com/v1";
+    public static String api_key_prod = "fFqR5gFRZm2t0HWGQR70cG7zjZXWytc6QQfi7pUa";
+
 
     // Centres module
     public static String post_centre=base_url+"/centres";
@@ -87,4 +93,17 @@ public class Routes {
     public static String patch_participant=base_url+"/participants/{participant_id}";
     public static String list_participants=base_url+"/participants";
     public static String delete_participant=base_url+"/participants/{participant_id}";
+
+    //List APIs for prod
+    public static String list_centres_prod=base_url_prod+"/centres";
+    public static String list_stores_prod=base_url_prod+"/stores";
+    public static String list_categories_prod=base_url_prod+"/categories";
+    public static String list_retailers_prod=base_url_prod+"/retailers";
+    public static String list_notices_prod=base_url_prod+"/notices";
+    public static String list_services_prod=base_url_prod+"/centres/{centre_id}/services";
+    public static String list_services_types_prod=base_url_prod+"/services/types";
+    public static String list_deals_prod=base_url_prod+"/deals";
+    public static String list_events_prod=base_url_prod+"/events";
+    public static String list_schedules_prod=base_url_prod+"/schedules";
+    public static String list_participants_prod=base_url_prod+"/participants";
 }

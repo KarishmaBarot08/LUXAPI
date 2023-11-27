@@ -71,7 +71,5 @@ public void abc(){
 
        Assert.assertEquals(response.getStatusCode(),200);
        Assert.assertTrue(response.jsonPath().getMap("meta").containsKey("page_count"), "Page count not found in the response");
-
-
    }
 }

@@ -3,11 +3,12 @@
 <suite name="Failed suite [LUX APIs]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="test.EventTestCases">
+      <class name="test.CentreDirectoryServiceTestCases">
         <methods>
-          <include name="testListEvents"/>
+          <include name="testUpdateService"/>
+          <include name="dataSetup"/>
         </methods>
-      </class> <!-- test.EventTestCases -->
+      </class> <!-- test.CentreDirectoryServiceTestCases -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [LUX APIs] -->
